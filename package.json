@@ -1,0 +1,29 @@
+{
+	"name": "rn-responsive-utility",
+	"version": "1.0.5",
+	"description": "A utility library for React Native that provides hooks for responsive scaling and device orientation information.",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"peerDependencies": {
+		"react": "18.2.0",
+		"react-native": "0.71.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/CodeCrafterPanda/rn-responsive-utility.git"
+	},
+	"keywords": [
+		"react-native-responsive",
+		"react-native-responsive-ui",
+		"react-native-responsive-view",
+		"react-native-mobile-responsive"
+	],
+	"author": "CodeCrafterPanda",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/CodeCrafterPanda/rn-responsive-utility/issues"
+	},
+	"homepage": "https://github.com/CodeCrafterPanda/rn-responsive-utility#readme"
+}
