@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Dimensions } from "react-native";
+import { Dimensions, StatusBar } from "react-native";
 
 export default useScreenOrientation = () => {
 	const [screenOrientation, setScreenOrientation] = useState("PORTRAIT");
@@ -27,5 +27,6 @@ export default useScreenOrientation = () => {
 		screenWidth,
 		screenHeight,
 		screenOrientation,
+		statusbarHeight: StatusBar.height,
 	};
 };

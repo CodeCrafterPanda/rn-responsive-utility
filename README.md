@@ -42,6 +42,10 @@ The **useScale** hook returns an object containing the following properties:
 
 **vScale**: the vertical scale factor based on the screen height
 
+**phScale**: the percentage horizontal scale factor based on the screen width
+
+**pvScale**: the percentage vertical scale factor based on the screen height
+
 **mhScale**: the medium horizontal scale factor based on the screen width (where it can take second parameter as scaling factor).
 
 **mvScale**: the medium vertical scale factor based on the screen height (where it can take second parameter as scaling factor).

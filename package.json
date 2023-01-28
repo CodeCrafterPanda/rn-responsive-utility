@@ -1,6 +1,6 @@
 {
 	"name": "rn-responsive-utility",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "A utility library for React Native that provides hooks for responsive scaling and device orientation information.",
 	"main": "index.js",
 	"scripts": {

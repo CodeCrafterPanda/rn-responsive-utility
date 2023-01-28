@@ -6,7 +6,7 @@ const guidelineBaseWidth = 400;
 const guidelineBaseHeight = 700;
 
 export default useScale = (lockmode = true) => {
-	const { screenWidth, screenHeight, screenOrientation } =
+	const { screenWidth, screenHeight, screenOrientation, statusbarHeight } =
 		useScreenOrientation();
 	const [shortDimension, setShortDimension] = useState(1);
 	const [longDimension, setLongDimension] = useState(1);
@@ -24,5 +24,8 @@ export default useScale = (lockmode = true) => {
 	const vScale = (size) => (longDimension / guidelineBaseHeight) * size;
 	const mhScale = (size, factor = 0.5) => size + (hScale(size) - size) * factor;
 	const mvScale = (size, factor = 0.5) => size + (vScale(size) - size) * factor;
-	return { hScale, vScale, mhScale, mvScale };
+	const phScale = (percentage) => (shortDimension / 100) * percentage;
+	const pvScale = (percentage) =>
+		((longDimension - (statusbarHeight || 0)) / 100) * percentage;
+	return { hScale, vScale, mhScale, mvScale, phScale, pvScale };
 };
